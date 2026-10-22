@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="theme-color" content="#2f7d32" />
+    <meta
+      name="description"
+      content="Undangan Ulang Tahun ke-1 Briyan — Jungle Safari Theme"
+    />
+    <title>Briyan is Turning ONE 🦁</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+
+    <!-- Countdown theme -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/simplycountdown.js/dist/themes/circle.css"
+    />
+
+    <!-- Fonts (digabung, tidak duplikat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@500;700;800&family=Caveat:wght@600;700&family=Kaushan+Script&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Lightbox CSS (sebelumnya kelewat, cuma JS saja) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.min.css"
+    />
+
+    <!-- Theme custom -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero panel">
+      <main>
+        <div class="badge-hero">BIRTHDAY PARTY • 1 TAHUN</div>
+
+        <h4 class="mb-2">UNDANGAN ULANG TAHUN</h4>
+        <img src="img/gallery/g-5.jpeg" alt="Foto Briyan" />
+        <br />
+        <h1 class="mb-2">Briyan</h1>
+
+        <div class="hero-meta">
+          <div class="hero-date">
+            <span class="line"></span>
+            <span class="text">26 Oktober 2027</span>
+            <span class="line"></span>
+          </div>
+          <div class="hero-to">
+            <div class="to-label">KEPADA YTH.</div>
+            <div class="to-name">Bapak/Ibu/Saudara/i</div>
+          </div>
+        </div>
+
+        <a href="#home" class="btn-hero mt-4" onclick="enableScroll()">
+          Buka Undangan
+        </a>
+      </main>
+    </section>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav
+      class="navbar md:navbar-expand sticky-top mynavbar"
+      aria-label="Navigasi utama"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#hero">Briyan</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarNavMenu"
+          aria-controls="navbarNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarNavMenu"
+          aria-labelledby="navbarNavMenuLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavMenuLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#event">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rsvp">RSVP</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <section id="home" class="home panel panel--alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker"><i class="bi bi-stars"></i> Welcome</div>
+          <h2>Selamat Datang</h2>
+          <p>
+            Dengan penuh suka cita, kami mengundang Bapak/Ibu/Saudara/i beserta
+            putra putri untuk menghadiri perayaan ulang tahun Briyan yang
+            pertama.
+          </p>
+        </div>
+
+        <div class="jungle-strip" aria-hidden="true">
+          <span>🦁</span><span>🐘</span><span>🦒</span><span>🐒</span
+          ><span>🦓</span>
+        </div>
+
+        <div class="single-photo-wrap">
+          <img
+            src="img/gallery/thum/gg1.png"
+            alt="Jungle Safari Briyan"
+            class="img-fluid rounded reveal-img"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="parents-info">
+          <span class="label">Dengan bangga kami,</span>
+          <div class="divider-leaf">🌿</div>
+          <div class="names">
+            Bapak I Made Adi Gunawan &amp; Ibu Ketut Lestariani
+          </div>
+          <span class="label"
+            >mengundang untuk merayakan ulang tahun putra kami,</span
+          >
+          <div class="names">I Gede Briyan Atharya Gunawan</div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="emoji">🎂</span>
+            <h5>Usia 1 Tahun</h5>
+            <p>Langkah pertama Briyan merayakan satu tahun kehidupan.</p>
+          </div>
+          <div class="feature-card">
+            <span class="emoji">💚</span>
+            <h5>Doa &amp; Restu</h5>
+            <p>
+              Kehadiran &amp; doa restu Bapak/Ibu adalah kado terindah untuk
+              kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="event" class="event panel">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker"><i class="bi bi-calendar-event"></i> Event</div>
+          <h2>Briyan is Turning One</h2>
+
+          <div class="date-chip">
+            <div class="date-num">26</div>
+            <div class="date-mid">
+              <div class="date-day">Senin</div>
+              <div class="date-month">Oktober 2026</div>
+            </div>
+            <div class="date-sep"></div>
+            <div class="date-right">
+              <div class="date-time">16.00 WIB</div>
+              <div class="date-until">s.d SELESAI</div>
+            </div>
+          </div>
+
+          <div class="col single-photo-wrap mt-6">
+            <img
+              src="img/gallery/thum/gg-2.png"
+              alt="Dekorasi Jungle Safari Briyan"
+              class="img-fluid rounded reveal-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="schedule-list">
+            <div class="schedule-item">
+              <span class="schedule-icon">🎉</span>
+              <div class="schedule-text">
+                <span class="schedule-time">16.00</span>
+                <strong>Pembukaan &amp; Penyambutan Tamu</strong>
+                <span>Kedatangan tamu undangan</span>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-icon">🎂</span>
+              <div class="schedule-text">
+                <span class="schedule-time">16.30</span>
+                <strong>Potong Kue &amp; Tiup Lilin</strong>
+                <span>Momen spesial Briyan</span>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-icon">🎈</span>
+              <div class="schedule-text">
+                <span class="schedule-time">17.00</span>
+                <strong>Hiburan</strong>
+                <span>Keseruan bersama teman-teman</span>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-icon">🍽️</span>
+              <div class="schedule-text">
+                <span class="schedule-time">17.30</span>
+                <strong>Makan Bersama</strong>
+                <span>Santap hidangan yang telah disiapkan</span>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-icon">📸</span>
+              <div class="schedule-text">
+                <span class="schedule-time">18.00</span>
+                <strong>Foto Bersama &amp; Penutup</strong>
+                <span>Dokumentasi momen kebersamaan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center my-4">
+            <div class="my-super-countdown simply-countdown-circle"></div>
+          </div>
+
+          <p>
+            <b>
+              Merupakan kebahagiaan bagi kami bila Bapak/Ibu dan putra-putri
+              berkenan hadir.
+            </b>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="gallery panel">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker"><i class="bi bi-images"></i> Gallery</div>
+          <h2>Momen Briyan</h2>
+        </div>
+
+        <div
+          class="row lg:row-cols-4 md:row-cols-3 sm:row-cols-2 row-cols-2 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a href="img/gallery/gf1.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-1.png"
+                alt="Momen Briyan 1"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf2.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-2.png"
+                alt="Momen Briyan 2"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf3.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-3.png"
+                alt="Momen Briyan 3"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf4.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-4.png"
+                alt="Momen Briyan 4"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf5.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-5.png"
+                alt="Momen Briyan 5"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf6.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-6.png"
+                alt="Momen Briyan 6"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf7.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-7.png"
+                alt="Momen Briyan 7"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf8.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-8.png"
+                alt="Momen Briyan 8"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf9.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-9.png"
+                alt="Momen Briyan 9"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf10.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-10.png"
+                alt="Momen Briyan 10"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf11.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-11.png"
+                alt="Momen Briyan 11"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf12.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-12.png"
+                alt="Momen Briyan 12"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf13.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-13.png"
+                alt="Momen Briyan 13"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf14.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-14.png"
+                alt="Momen Briyan 14"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf15.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-15.png"
+                alt="Momen Briyan 15"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf16.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-16.png"
+                alt="Momen Briyan 16"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf17.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-17.png"
+                alt="Momen Briyan 17"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gf18.jpeg" data-toggle="lightbox">
+              <img
+                src="img/gallery/thum/bt-18.png"
+                alt="Momen Briyan 18"
+                class="img-fluid w-100 rounded reveal-img"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp panel panel--alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker"><i class="bi bi-check2-circle"></i> RSVP</div>
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>
+            Mohon isi form di bawah untuk mengkonfirmasi kehadiran
+            Bapak/Ibu/Saudara/i.
+          </p>
+        </div>
+
+        <div class="mt-3">
+          <div class="rsvp-side">
+            <img
+              src="img/gallery/thum/gg-31.png"
+              alt="Jungle Safari Briyan"
+              class="reveal-img"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="info-strip" style="margin-top: 1.5rem">
+              <div class="info-card">
+                <span class="info-icon">📍</span>
+                <div class="info-title">Lokasi</div>
+                <p class="info-text">Rumah Briyan</p>
+              </div>
+              <div class="info-card">
+                <span class="info-icon">👕</span>
+                <div class="info-title">Dress Code</div>
+                <p class="info-text">Bebas</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form
+              class="row mt-6 g-3 justify-content-center"
+              method="POST"
+              id="my-form"
+              action="https://script.google.com/macros/s/AKfycbzCEedXrHLhy01b3qeB-YMgPmyOoaLPyqiDEEQG6M3F7DYz3rJ2uXpbwMsZUobaf_9MSw/exec"
+            >
+              <div class="col-12 col-md-6">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  required
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="jumlah" class="form-label">Jumlah orang</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="jumlah"
+                  name="jumlah"
+                  min="1"
+                  max="5"
+                  value="1"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="status" class="form-label">Status Kehadiran</label>
+                <select name="status" id="status" class="form-control" required>
+                  <option value="" selected disabled>Pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
+
+              <div class="col-12 d-grid mt-6">
+                <button class="btn btn-primary" type="submit">
+                  Kirim Konfirmasi
+                </button>
+              </div>
+            </form>
+
+            <div class="wishes-box">
+              "Terima kasih sudah menjadi bagian dari hari bahagia kami. Doa
+              restu Bapak/Ibu adalah hadiah terindah untuk Briyan." 🦁💚
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center text-dark small">
+          © 2026 Briyan Birthday. All Rights Reserved. Designed by
+          <a
+            href="https://instagram.com/tukoli05"
+            target="_blank"
+            rel="noopener"
+            >@tukoli05</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ AUDIO ============ -->
+    <div id="audio-container">
+      <audio id="song" loop>
+        <source
+          src="audio/Happy Birthday Piano Version [youaretube.com].mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="./node_modules/simplycountdown.js/dist/simplyCountdown.umd.js"></script>
+    <script>
+      simplyCountdown(".my-super-countdown", {
+        year: 2026,
+        month: 10,
+        day: 26,
+        hours: 16,
+        minutes: 0,
+        seconds: 0,
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft =
+          window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        playAudio();
+      }
+
+      function playAudio() {
+        audioIconWrapper.style.display = "flex";
+        song.play().catch(() => {});
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play().catch(() => {});
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+
+      disableScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, { method: "POST", body: data }).then(() => {
+            alert("Konfirmasi kehadiran berhasil dikirim!");
+          });
+        });
+      });
+    </script>
+
+    <!--
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero-to .to-name');
+      namaContainer.textContent = `${pronoun}`;
+      document.querySelector('#nama').value = nama;
+    </script>
+    -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+    <script src="animations.js" defer></script>
+  </body>
+</html>
