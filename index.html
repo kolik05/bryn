@@ -2,7 +2,10 @@
 <html lang="id">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
     <meta name="color-scheme" content="light only" />
     <meta name="theme-color" content="#2f7d32" />
     <meta
@@ -88,7 +91,7 @@
         <a class="navbar-brand" href="#hero">Briyan</a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler btn-icon"
           type="button"
           data-bs-toggle="drawer"
           data-bs-target="#navbarNavMenu"
@@ -695,6 +698,33 @@
       document.querySelector('#nama').value = nama;
     </script>
     -->
+
+    <script>
+      // Mencegah pinch-to-zoom pada perangkat sentuh.
+      document.addEventListener(
+        "touchmove",
+        function (event) {
+          if (event.touches.length > 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false },
+      );
+
+      // Mencegah gesture zoom melalui event gesture
+      // pada browser yang mendukungnya.
+      ["gesturestart", "gesturechange", "gestureend"].forEach(
+        function (eventName) {
+          document.addEventListener(
+            eventName,
+            function (event) {
+              event.preventDefault();
+            },
+            { passive: false },
+          );
+        },
+      );
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
